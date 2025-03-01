@@ -1,0 +1,9 @@
+def hms(i):
+    
+    h,r = divmod(i, 3600)
+    m, s = divmod (r,60)
+    
+    return h,m,s  
+
+h,m,s = hms(i) # input i in seconds
+print(f'{i} seconds are {h} h: {m} min: {s} s.')
